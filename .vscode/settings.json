@@ -11,7 +11,6 @@
         "typescript",
         "typescriptreact"
     ],
-    "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.enableVisualBell": true,
     "rech.batch.alertConflictingExtensions": false,
     "workbench.colorTheme": "PowerShell ISE",
@@ -22,9 +21,12 @@
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-            "args": [],
-            "icon": "terminal-powershell",
-            "cwd": "${workspaceFolder}"
+            "args": [
+                "-NoExit",
+                "-Command",
+                "Set-Location -LiteralPath '${workspaceFolder}'"
+            ],
+            "icon": "terminal-powershell"
         },
         "Command Prompt": {
             "path": "C:\\Windows\\System32\\cmd.exe",
@@ -54,8 +56,5 @@
             "cwd": "${workspaceFolder}"
         }
     },
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "powershell.cwd": "${workspaceFolder}",
-    "lldb.launch.cwd": "${workspaceFolder}",
-    "code-runner.cwd": "${workspaceFolder}"
+    "terminal.integrated.defaultProfile.windows": "PowerShell"
 }
