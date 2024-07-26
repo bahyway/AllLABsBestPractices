@@ -56,5 +56,6 @@
             "cwd": "${workspaceFolder}"
         }
     },
-    "terminal.integrated.defaultProfile.windows": "PowerShell"
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "DockerRun.DisableDockerrc": true
 }
