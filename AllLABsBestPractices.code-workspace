@@ -1,0 +1,60 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "AllLABsBestPractices",
+			"path": "AllLABsBestPractices"
+		}
+	],
+	"settings": {
+		"terminal.integrated.enableVisualBell": true,
+		"rech.batch.alertConflictingExtensions": false,
+		"workbench.colorTheme": "PowerShell ISE",
+		"workbench.colorCustomizations": {
+			"terminal.foreground": "#b1eafc",
+			"terminal.background": "#17038b"
+		},
+		"terminal.integrated.profiles.windows": {
+			"PowerShell": {
+				"path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+				"args": [
+					"-NoExit",
+					"-Command",
+					"Set-Location -LiteralPath '${workspaceFolder}'"
+				],
+				"icon": "terminal-powershell"
+			},
+			"Command Prompt": {
+				"path": "C:\\Windows\\System32\\cmd.exe",
+				"args": [],
+				"icon": "terminal-cmd",
+				"cwd": "${workspaceFolder}"
+			},
+			"Azure CLI": {
+				"path": "C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\CLI2\\wbin\\az.cmd",
+				"args": [],
+				"icon": "terminal-azure",
+				"cwd": "${workspaceFolder}"
+			},
+			"Git Bash": {
+				"path": "C:\\Program Files\\Git\\bin\\bash.exe",
+				"args": [
+					"--login",
+					"-i"
+				],
+				"icon": "terminal-bash",
+				"cwd": "${workspaceFolder}"
+			},
+			"Terminal": {
+				"path": "C:\\Windows\\System32\\cmd.exe",
+				"args": [],
+				"icon": "terminal-cmd",
+				"cwd": "${workspaceFolder}"
+			}
+		},
+		"terminal.integrated.defaultProfile.windows": "PowerShell",
+		"DockerRun.DisableDockerrc": true
+	}
+}
